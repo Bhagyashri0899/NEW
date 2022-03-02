@@ -19,14 +19,20 @@ public class sampleJDBCpg {
         		//String query = "select * from employee";
         		ResultSet rs = stmt.executeQuery("SELECT EmpID ,EmpName, EmpSalary FROM employee ");
         		while(rs.next())
-        		{        		
-        			System.out.println(rs.getString(1));
-        			System.out.println(rs.getString(2));
-        			System.out.println(rs.getString(3));
+        		{        	
+        			int EmpID = rs.getInt("EmpID");
+        			String EmpName = rs.getString("EmpName");
+        			float EmpSalary = rs.getFloat("EmpSalary");
+        			System.out.println(EmpID + ", " + EmpName + "," + EmpSalary);
+                             
+        			
+        			//System.out.println(rs.getString(1));
+        			//System.out.println(rs.getString(2));
+        			//System.out.println(rs.getString(3));
         			
            		}
         				
-        	    //stmt.executeUpdate(query);
+        	   // stmt.executeUpdate(query);
         	   stmt.executeUpdate(query1);
         				
         	    //System.out.println("employee table created successfully");
