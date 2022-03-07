@@ -20,7 +20,7 @@ public class StreamAPIDemo {
 		
 		/*for(int i= 0;   i<6; i++) {
 			System.out.println(values.get(i));		
-	    }*/
+	    }*
 	
 	  /* Iterator<Integer> iValues = values.iterator();
 	   while(iValues.hasNext()) {
