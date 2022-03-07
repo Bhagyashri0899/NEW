@@ -1,6 +1,6 @@
 package day21;
 
-public class Villan {
+public class Villan implements Actor {
 
 	public void act()
 	{
@@ -15,8 +15,12 @@ public class Villan {
 		 System.out.println(" I am rude");
 	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
+		Villan vln = new Villan();
+		vln.act();
+		vln.speak();
+		vln.rude();
+		
 	}
 
 }

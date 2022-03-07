@@ -14,7 +14,10 @@ public class Hero implements Actor {
     	 System.out.println(" I can comedy");
      }
      public static void main(String[]args) {
-    	 
+    	 Hero  hr = new Hero();
+    	 hr.act();
+    	 hr.speak();
+    	 hr.comedy();
      }
      
 }
