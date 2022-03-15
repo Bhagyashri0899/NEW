@@ -25,10 +25,10 @@ public abstract class SavingAcc extends BankAcc
 		super.withdraw(wd);
 	}
 	@Override
-	public String toString()
-	{
-		return super.toString();
+	public String toString() {
+		return "SavingAcc [isSalaried=" + isSalaried + "]";
 	}
+	
 	
 	
 }

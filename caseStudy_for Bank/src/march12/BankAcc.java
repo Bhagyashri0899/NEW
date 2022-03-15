@@ -42,10 +42,12 @@ abstract class BankAcc {
 	public  void deposite(float dp)  {
 		deposite(dp);
 	  }
-	@Override	
-	 public  String toString() {
-		return super.toString();
+
+	@Override
+	public String toString() {
+		return "BankAcc [accNo=" + accNo + ", accNm=" + accNm + ", accBal=" + accBal + "]";
 	}
+	
 
 	
 	
