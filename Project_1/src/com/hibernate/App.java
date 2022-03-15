@@ -10,6 +10,7 @@ import com.hibernate.project_1.Users;
 public class App {
 
 	public static void main(String[] args) {
+		
 		SessionFactory factory = new Configuration()
                 .configure("hibernate.cfg.xml")
                 .addAnnotatedClass(Users.class)
@@ -39,7 +40,6 @@ System.out.println(user);
 session.close();
 factory.close();
 }
-
-	}
+}
 
 }
