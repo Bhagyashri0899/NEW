@@ -1,15 +1,15 @@
 package CaseStudy_I;
 
 public abstract class NormalAcc extends ShopAcc {
-	private final float deliveryCharges;
+	private  final float deliveryCharges = 0;
     
-	public NormalAcc(int accNo, String acNm, float charges, float deliveryCharges) {
+	public NormalAcc(int accNo, String acNm, float charges) {
 		super(accNo, acNm, charges);
-		this.deliveryCharges = deliveryCharges;
+		
 				
 	}
 
-	public float getDeliveryCharges() {
+	public  float getDeliveryCharges() {
 		return deliveryCharges;
 	}
 
@@ -17,9 +17,10 @@ public abstract class NormalAcc extends ShopAcc {
 	public void bookProduct(float bookProduct) {
 		super.bookProduct(bookProduct);
 	}
+
 	public String toString() {
-		return super.toString();
-	}	
+		return "NormalAcc [deliveryCharges=" + deliveryCharges + "]";
+	}
 	
 
 

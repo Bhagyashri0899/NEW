@@ -7,6 +7,7 @@ public abstract class PrimeAcc extends ShopAcc
 	
 	public PrimeAcc(int accNo, String accNm, float charges, boolean isPrime) {
 		super(accNo, accNm, charges);
+		
 	}
 	
 	public boolean isPrime() {
@@ -22,10 +23,11 @@ public abstract class PrimeAcc extends ShopAcc
 	public void bookProduct(float bookProduct) {
 		 super.bookProduct(bookProduct);
 	}
-	public String toString()
-	{
-		return super.toString();
+
+	public String toString() {
+		return "PrimeAcc [isPrime=" + isPrime + ", deliveryCharges=" + deliveryCharges + "]";
 	}
+	
 	
 
 }

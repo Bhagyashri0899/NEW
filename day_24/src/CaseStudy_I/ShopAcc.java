@@ -40,10 +40,12 @@ public abstract class ShopAcc {
 	public  void items(float itm)  {
 		items(itm);
 	  }
-		
-	 public  String toString() {
-		return super.toString();
+
+	public String toString() {
+		return "ShopAcc [accNo=" + accNo + ", acNm=" + acNm + ", charges=" + charges + "]";
 	}
+		
+	
 	
 }
  

@@ -5,7 +5,6 @@ public class GSShopFactory extends ShopFactory {
 	{
 		return null;
 	}
-	
 	public GSNormalAcc getNewNormalAcc (int accNo , String accNm, float charges , float deliveryChargese)
 	{
 		return null;

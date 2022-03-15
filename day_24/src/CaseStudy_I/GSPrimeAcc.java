@@ -1,6 +1,6 @@
 package CaseStudy_I;
 
-public abstract class GSPrimeAcc extends PrimeAcc {
+public class GSPrimeAcc extends PrimeAcc {
 	private static  float charges;
 	
 	public GSPrimeAcc (int accNo , String accNm, float charges ,boolean isPrime)
