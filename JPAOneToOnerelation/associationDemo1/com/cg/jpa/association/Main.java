@@ -34,3 +34,14 @@ public class Main {
 		   }
 		
 }
+
+/* out put:-
+  
+  department table   -    Id	 Name
+                          301	 Development
+----------------------------------------------------
+
+   employee table   -   Eid   Deg	                 Ename	Salary	Department_id
+                        302	  Technical Writer	     Satish	45000	301
+                   */
+ 
