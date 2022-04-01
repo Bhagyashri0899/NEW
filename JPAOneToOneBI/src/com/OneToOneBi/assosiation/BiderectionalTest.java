@@ -9,7 +9,7 @@ import javax.persistence.Persistence;
 public class BiderectionalTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("JPA-PU");
 		EntityManager em = factory.createEntityManager();
 		em.getTransaction().begin();
@@ -23,7 +23,10 @@ public class BiderectionalTest {
 		homeaddress.setState("Maharashtra");
 		homeaddress.setZipcode("424 002");
                             
-		student.setAddress(homeaddress);		
+		//inject address into student
+		student.setAddress(homeaddress);
+		
+		//persist only student, no need to persist Address explicitly
 		em.persist(student);		
 		em.getTransaction().commit();
 

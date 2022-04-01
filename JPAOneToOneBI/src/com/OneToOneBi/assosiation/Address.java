@@ -29,6 +29,8 @@ public class Address implements Serializable{
 	@Column(name="ADDRESS_ZIPCODE")
 	private String zipcode;
 	
+	//to create bi-directional relationship, use one to one with mappedBy 
+	//mappedBy attribute indicates property name of owner i.e. Student class
 	@OneToOne(mappedBy = "address")
 	private Student student;
 	
