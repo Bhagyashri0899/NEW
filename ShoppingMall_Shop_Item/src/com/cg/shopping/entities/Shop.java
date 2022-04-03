@@ -17,7 +17,7 @@ public class Shop
     private String shopName;
     private String customers;
     private String shopStatus;  
-    private String shopOwner;    
+    private ShopOwner shopOwner;    
     private String leaseStatus;
     
     
@@ -60,17 +60,18 @@ public class Shop
 	public void setShopStatus(String shopStatus) {
 		this.shopStatus = shopStatus;
 	}
-	public String getShopOwner() {
-		return shopOwner;
-	}
-	public void setShopOwner(String shopOwner) {
-		this.shopOwner = shopOwner;
-	}
+	
 	public String getLeaseStatus() {
 		return leaseStatus;
 	}
 	public void setLeaseStatus(String leaseStatus) {
 		this.leaseStatus = leaseStatus;
+	}
+	public ShopOwner getShopOwner() {
+		return shopOwner;
+	}
+	public void setShopOwner(ShopOwner shopOwner) {
+		this.shopOwner = shopOwner;
 	}
 
 	
