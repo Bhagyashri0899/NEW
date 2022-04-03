@@ -10,7 +10,7 @@ public class Shop
 {
 	@Id
 	
-    private int shopId;
+	 private int shopId;
     private String shopCategory;   
     private String shopEmployeeId;  
     private String shopName;

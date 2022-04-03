@@ -11,8 +11,8 @@ public class Item
 	@Id
 	private int id;
     private String name;
-    private int manufacturing;
-    private int expiry;
+    private String manufacturing;
+    private String expiry;
     private String category;
     
     
@@ -28,18 +28,13 @@ public class Item
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getManufacturing() {
-		return manufacturing;
-	}
-	public void setManufacturing(int manufacturing) {
+	public void setManufacturing(String manufacturing) {
 		this.manufacturing = manufacturing;
 	}
-	public int getExpiry() {
-		return expiry;
-	}
-	public void setExpiry(int expiry) {
+	public void setExpiry(String expiry) {
 		this.expiry = expiry;
 	}
+	
 	public String getCategory() {
 		return category;
 	}
