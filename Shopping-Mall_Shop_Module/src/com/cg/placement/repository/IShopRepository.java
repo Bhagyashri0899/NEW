@@ -15,7 +15,7 @@ public interface  IShopRepository
 		public Shop addEmployee(Shop shop);
 		public Shop updateEmployee(Shop shop);
 		public Shop addItem(Shop shop);
-		void deleteShop(int id);
+		
 	
 	
 	

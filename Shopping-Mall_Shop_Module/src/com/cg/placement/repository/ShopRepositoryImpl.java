@@ -36,12 +36,7 @@ public class ShopRepositoryImpl implements IShopRepository
 			return shop;
 		}
 
-		@Override
-		public void deleteShop(int id)
-		{
-			Shop shop = entityManager.find(Shop.class,id);
-			entityManager.remove(shop);
-		}
+		
 
 		@Override
 		public void beginTransaction()

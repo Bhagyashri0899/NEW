@@ -59,7 +59,7 @@ public class client
 	  */ 
   
 	  
-	   shop = service.searchShopById(11);
+	   shop = service.searchShopById(10);
 	   service.deleteShop(shop);
 	   System.out.println("Delete is successful");
 	   
