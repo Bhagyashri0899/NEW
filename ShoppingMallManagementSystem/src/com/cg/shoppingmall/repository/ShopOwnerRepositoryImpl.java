@@ -6,14 +6,14 @@ import com.cg.shoppingmall.entities.ShopOwner;
 
 
 
-public class ShopOwnerImpl implements IShopOwnerRepository
+public class ShopOwnerRepositoryImpl implements IShopOwnerRepository
 {
 
 	//Step 1: Start JPA LifeCycle
 	
     //create entity manager object, and import
 		private EntityManager entityManager;
-		public ShopOwnerImpl() 
+		public ShopOwnerRepositoryImpl() 
 		{
 			entityManager = JPAUtil.getEntityManager();
 		}

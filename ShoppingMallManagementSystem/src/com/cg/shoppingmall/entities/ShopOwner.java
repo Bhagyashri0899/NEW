@@ -1,5 +1,6 @@
 package com.cg.shoppingmall.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -9,12 +10,25 @@ import javax.persistence.Table;
 public class ShopOwner 
 {
 	@Id
+	@Column(name="id")
      private int id;
+	
+	@Column(name="dateOfPurchase")
      private String dateOfPurchase;     //LocalDateTime dateOfPurchase;
-     private float total;
+     
+	@Column(name="total")
+	private float total;
+	
+	@Column(name="customer_id")
      private Customer customer_id;
+	
+	@Column(name="paymentMethod")
      private String paymentMethod;
+	
+	@Column(name="shop_id")
      private Shop shop_id;
+	
+	
 	public int getId() {
 		return id;
 	}

@@ -1,23 +1,45 @@
 package com.cg.shoppingmall.entities;
 
+
+
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Inheritance;
 import javax.persistence.Table;
 
+import javax.persistence.InheritanceType;
 
 
 @Entity
 @Table(name="shop")
-public class Shop
+@Inheritance(strategy=InheritanceType.JOINED)
+public class Shop 
 {
+	
 	@Id
+	@Column(name="shopId")
     private int shopId;
-    private String shopCategory;   
-    private Employee shopEmployeeId;    
+	
+	@Column(name="shopCategory")
+    private String shopCategory;  
+	
+	@Column(name="shopEmployeeId")
+    private Employee shopEmployeeId; 
+	
+	@Column(name="shopName")
     private String shopName;
+	
+	@Column(name="customers")
     private String customers;
-    private String shopStatus;  
-    private ShopOwner shopOwner;    
+	
+	@Column(name="shopStatus")
+    private String shopStatus;
+	
+	@Column(name="shopOwner")
+    private ShopOwner shopOwner;
+	
+	@Column(name="leaseStatus")
     private String leaseStatus;
     
     
@@ -74,5 +96,6 @@ public class Shop
 		this.shopOwner = shopOwner;
 	}
 
+	
 	
 }
