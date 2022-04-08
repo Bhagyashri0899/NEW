@@ -68,7 +68,7 @@ public class IMallAdminRepositoryImpl implements IMallAdminRepository
 
 	@Override
 	public void approveNewShop(MallAdmin mallAdmin) {
-		
+	
 	}
 
 }

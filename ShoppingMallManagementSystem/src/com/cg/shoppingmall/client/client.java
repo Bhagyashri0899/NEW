@@ -16,7 +16,7 @@ public class client
 {
 	public static void main(String[] args)
 	{
-		
+	
 		
 		User user = new User();
 		IUserService service = new IUserServiceImpl();
@@ -25,9 +25,9 @@ public class client
 		user.setType("normal");
 		user.setPassword("kbc");
 		
-		service.addUser(user);
+		service.addNewUser(user);
 		System.out.println("new user Added");
-		
+	/*
 		
 		/*Item item=new Item();
 		IItemService service1=new ItemServiceImpl();
@@ -62,16 +62,18 @@ public class client
 		service1.addEmployee(empl);
 		System.out.println("new employee Added");
 		
-		
+	
 		Shop shop=new Shop();
+		 IShopService service = new ShopServiceImpl();
+		 
 		shop.setShopId(101);
 		shop.setShopEmployeeId(null);
 		shop.setShopName("Apple");
 		//shop.setShopowner(shop"abc");
-		service1.addShop(shop);
+		service.addShop(shop);
 		System.out.println("new shop Added");
 		
-		
+		/*
 		//Shop shop= new Shop();   //this is for employee table
 		//shop
 		
@@ -106,7 +108,7 @@ public class client
 		//em.persist(shopEmployees);
 		//emp.persist(item);
 		
-		System.out.println("Added shop along with two employees to database.");
+	//	System.out.println("Added shop along with two employees to database.");
 		
 		//em.getTransaction().commit();
 	

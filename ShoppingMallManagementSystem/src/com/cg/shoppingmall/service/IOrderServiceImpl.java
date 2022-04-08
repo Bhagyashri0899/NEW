@@ -17,7 +17,7 @@ public class IOrderServiceImpl implements IOrderService{
 	public OrderDetails addOrder(OrderDetails order) {
 		dao.beginTransaction();
 		dao.addOrder(order);
-	dao.commitTransaction();
+	    dao.commitTransaction();
 
 		return order;
 	}
@@ -31,24 +31,9 @@ public class IOrderServiceImpl implements IOrderService{
 		return order;
 	}
 
-	
-
-	
-
-	//@Override
-	//public Item addItem(Item item) {
-	//	dao.beginTransaction();
-		
-		//dao.commitTransaction();
-
-		//return null;
-	//}
-
 	@Override
 	public OrderDetails searchOrder(int id) {
 		OrderDetails order= dao.searchOrder(id);
-		
-
 		return order;
 	}
 
@@ -60,8 +45,10 @@ public class IOrderServiceImpl implements IOrderService{
 
 	@Override
 	public Item addItem(Item item) {
-		// TODO Auto-generated method stub
-		return null;
+		dao.beginTransaction();
+		dao.addItem(item);
+		dao.commitTransaction();
+		return item;
 	}
 		
 

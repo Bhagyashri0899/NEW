@@ -1,9 +1,5 @@
 package com.cg.shoppingmall.service;
 
-import com.cg.shoppingmall.entities.Employee;
-import com.cg.shoppingmall.entities.Item;
-import com.cg.shoppingmall.entities.OrderDetails;
-import com.cg.shoppingmall.entities.Shop;
 import com.cg.shoppingmall.entities.User;
 import com.cg.shoppingmall.repository.IUserRepository;
 import com.cg.shoppingmall.repository.IUserRepositoryImpl;
@@ -16,9 +12,9 @@ public class IUserServiceImpl implements IUserService {
 			dao = new IUserRepositoryImpl();
 		}
 		// Step 2: Service calls to perform CRUD Operation
-		public User addUser(User user) {
+		public User addNewUser(User user) {
 	        dao.beginTransaction();
-			dao.addUser(user);
+			dao.addNewUser(user);
 			dao.commitTransaction();
 			return user;
 		}
@@ -46,36 +42,8 @@ public class IUserServiceImpl implements IUserService {
 			dao.commitTransaction();
 			return false;
 		}
-		@Override
-		public void addItem(Item item) {
-			// TODO Auto-generated method stub
-			
-		}
-		@Override
-		public User addUser1(OrderDetails order) {
-			// TODO Auto-generated method stub
-			return null;
-		}
-		@Override
-		public void addUser(OrderDetails order) {
-			// TODO Auto-generated method stub
-			
-		}
-		@Override
-		public void addOrder(User user) {
-			// TODO Auto-generated method stub
-			
-		}
-		@Override
-		public void addEmployee(Employee empl) {
-			// TODO Auto-generated method stub
-			
-		}
-		@Override
-		public void addShop(Shop shop) {
-			// TODO Auto-generated method stub
-			
-		}
+		
+		
 		
 
 }

@@ -2,6 +2,7 @@ package com.cg.shoppingmall.repository;
 
 import javax.persistence.EntityManager;
 
+import com.cg.shoppingmall.entities.Item;
 import com.cg.shoppingmall.entities.OrderDetails;
 
 public class IOrderRepositoryImpl implements IOrderRepository
@@ -44,6 +45,12 @@ public class IOrderRepositoryImpl implements IOrderRepository
 	@Override
 	public void commitTransaction() {
 		entityManager.getTransaction().commit();
+	}
+
+	@Override
+	public void addItem(Item item) {
+		entityManager.persist(item);
+		
 	}
 
 }

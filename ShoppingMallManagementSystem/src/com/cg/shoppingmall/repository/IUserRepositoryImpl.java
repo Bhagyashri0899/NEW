@@ -16,7 +16,7 @@ public class IUserRepositoryImpl implements IUserRepository
 		// Create operation - Repo/DAO
 		
 		@Override
-		public User addUser(User user) {
+		public User addNewUser(User user) {
 			entityManager.persist(user);
 			return user;
 		}
